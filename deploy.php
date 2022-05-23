@@ -5,7 +5,6 @@ namespace Deployer;
 // Include the Laravel & rsync recipes
 require 'recipe/laravel.php';
 require 'recipe/rsync.php';
-require_once 'recipe/common.php';
 
 set('application', 'My App');
 set('ssh_type', 'native');
@@ -38,16 +37,14 @@ task('deploy:secrets', function () {
 });
 
 // Production Server
-host('137.184.137.166') // Name of the server
-->password('sxrjjxjc123!')
+host('production.gnugridcrb.com') // Name of the server
 ->hostname('137.184.137.166') // Hostname or IP address
 ->stage('production') // Deployment stage (production, staging, etc)
 ->user('jtugume') // SSH user
 ->set('deploy_path', '/var/www/my-app'); // Deploy path
 
 // Staging Server
-host('68.183.100.59') // Name of the server
-->password('sxrjjxjc123!')
+host('staging.gnugridcrb.com') // Name of the server
 ->hostname('68.183.100.59') // Hostname or IP address
 ->stage('staging') // Deployment stage (production, staging, etc)
 ->user('jtugume') // SSH user
