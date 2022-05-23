@@ -7,6 +7,7 @@ require 'recipe/laravel.php';
 require 'recipe/rsync.php';
 
 set('application', 'My App');
+set('ssh_type', 'native');
 set('ssh_multiplexing', true); // Speeds up deployments
 
 set('rsync_src', function () {
@@ -37,6 +38,7 @@ task('deploy:secrets', function () {
 
 // Production Server
 host('137.184.137.166') // Name of the server
+->password('sxrjjxjc123!')
 ->hostname('137.184.137.166') // Hostname or IP address
 ->stage('production') // Deployment stage (production, staging, etc)
 ->user('jtugume') // SSH user
@@ -44,6 +46,7 @@ host('137.184.137.166') // Name of the server
 
 // Staging Server
 host('68.183.100.59') // Name of the server
+->password('sxrjjxjc123!')
 ->hostname('68.183.100.59') // Hostname or IP address
 ->stage('staging') // Deployment stage (production, staging, etc)
 ->user('jtugume') // SSH user
