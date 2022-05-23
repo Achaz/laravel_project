@@ -5,6 +5,7 @@ namespace Deployer;
 // Include the Laravel & rsync recipes
 require 'recipe/laravel.php';
 require 'recipe/rsync.php';
+require_once 'recipe/common.php';
 
 set('application', 'My App');
 set('ssh_type', 'native');
