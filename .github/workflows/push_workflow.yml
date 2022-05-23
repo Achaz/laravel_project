@@ -84,7 +84,7 @@ jobs:
           php-version: 7.4
           extensions: mbstring, bcmath
       - name: Composer install
-        run: composer install --ignore-platform-reqs --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+        run: composer install --ignore-platform-reqs --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist
       - name: Setup Deployer
         uses: atymic/deployer-php-action@master
         with:
@@ -112,7 +112,7 @@ jobs:
           php-version: 7.4
           extensions: mbstring, bcmath
       - name: Composer install
-        run: composer install --ignore-platform-reqs --no-ansi --no-interaction --no-scripts --no-suggest --no-progress --prefer-dist
+        run: composer install --ignore-platform-reqs --no-ansi --no-interaction --no-scripts --no-suggest --prefer-dist
       - name: Setup Deployer
         uses: atymic/deployer-php-action@master
         with:
