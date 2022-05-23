@@ -28,7 +28,6 @@
         "sass-loader": "^8.0.0",
         "vue": "^3.2.33",
         "vue-jest": "^3.0.7",
-        "vue-template-compiler": "^2.6.10",
         "vue3-jest": "^27.0.0-alpha.1"
     },
     "babel": {
