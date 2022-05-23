@@ -1,12 +1,8 @@
 module.exports = {
-    testRegex: 'resources/js/tests/.*.spec.js$',
-    moduleFileExtensions: [
-        'js',
-        'json',
-        'vue'
-    ],
-    'transform': {
-        '^.+\\.js$': '<rootDir>/node_modules/babel-jest',
-        '.*\\.(vue)$': '<rootDir>/node_modules/vue-jest'
-    },
-};
+  moduleFileExtensions: ['vue', 'js', 'json', 'jsx'],
+  testEnvironment: 'jsdom',
+  transform: {
+    '^.+\\.vue$': 'vue3-jest',
+    '^.+\\js$': 'babel-jest',
+  },
+}
