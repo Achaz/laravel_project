@@ -45,7 +45,7 @@ host('production.gnugridcrb.com') // Name of the server
 
 // Staging Server
 host('staging.gnugridcrb.com') // Name of the server
-->hostname('68.183.100.59') // Hostname or IP address
+->hostname('staging.gnugridcrb.com') // Hostname or IP address
 ->stage('staging') // Deployment stage (production, staging, etc)
 ->user('jtugume') // SSH user
 ->set('deploy_path', '/var/www/my-app-staging'); // Deploy path
